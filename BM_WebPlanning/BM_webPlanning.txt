@@ -1,0 +1,12 @@
+web structure:
+1. (Header) usual navbar at the top of the page:
+	logo on the right
+	Home, about, contact
+	FAQ
+2. pamflet/brochure/opening message/landing page full size
+3. (about us) a quote stating what we are, what the company is about, what we do
+4. kategori skolah dan apa yang di ajarkan
+5. apa yg membedakan kita dari bimbel lain?, why us?
+6. ayo gabung sekarang! (ribbon)
+7. testimonial (review)
+8. (footer) sosmed, link, contact, phone, address, etc
