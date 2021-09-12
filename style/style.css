@@ -24,8 +24,6 @@ header {
           align-items: center;
   position: fixed;
   background-color: white;
-  -webkit-box-shadow: 0px 10px 5px -10px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 10px 5px -10px rgba(0, 0, 0, 0.75);
 }
 
 header img {
@@ -55,13 +53,33 @@ header nav a {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  display: inline-block;
+  position: relative;
 }
 
-header nav a:hover {
-  color: #585858;
-  text-decoration: underline;
+header nav a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+header nav a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 section #greet {
@@ -185,15 +203,46 @@ section #about_us #who_we_are p {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   width: 100%;
   height: 170px;
-  -webkit-box-shadow: -1px -1px 5px -1px rgba(0, 0, 0, 0.75);
-          box-shadow: -1px -1px 5px -1px rgba(0, 0, 0, 0.75);
+  background-color: #22242b;
 }
 
-footer p {
+footer P {
+  padding: 1rem 0 0 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+}
+
+footer #soc-med-links a {
+  padding: 0 1rem 0 1rem;
+}
+
+footer #footer-cpy-rght {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-weight: lighter;
   font-size: 14px;
+  padding: 0 0 1rem 0;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
