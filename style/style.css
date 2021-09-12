@@ -157,14 +157,20 @@ section #about_us {
 }
 
 section #about_us #abt-us-img {
-  width: 30%;
-  height: auto;
-  background-image: url("../images/kids-studying1.jpg");
+  width: 40%;
+  height: 90vh;
   background-size: cover;
+  padding: 5rem 2.5rem 5rem 2.5rem;
+}
+
+section #about_us #abt-us-img img {
+  width: 100%;
+  height: auto;
 }
 
 section #about_us #who_we_are {
-  width: 70%;
+  width: 60%;
+  padding: 2rem 5rem 2rem 2rem;
 }
 
 section #about_us #who_we_are h1 {
@@ -173,7 +179,21 @@ section #about_us #who_we_are h1 {
 }
 
 section #about_us #who_we_are p {
-  font-size: 20px;
+  text-align: justify;
+  font-size: 17px;
   font-weight: lighter;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: 170px;
+  -webkit-box-shadow: -1px -1px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px -1px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+footer p {
+  font-weight: lighter;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
