@@ -245,4 +245,49 @@ footer #footer-cpy-rght {
   padding: 0 0 1rem 0;
   color: white;
 }
+
+/* For Mobile Screen */
+@media only screen and (max-width: 767px) {
+  header img {
+    width: 150px;
+  }
+  header nav {
+    display: none;
+  }
+  section #greet #greet_overlay {
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  section #greet #greet_overlay #greet_title {
+    padding-top: 0;
+    font-size: 1rem;
+  }
+  section #about_us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  section #about_us #abt-us-img {
+    height: auto;
+    width: 100%;
+    padding: 2em;
+  }
+  section #about_us #who_we_are {
+    width: 100%;
+    padding: 2em;
+  }
+  section #about_us #who_we_are h1 {
+    margin-bottom: .3em;
+    font-size: 3rem;
+  }
+  section #about_us #who_we_are p {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+}
+
+/* For Mobile Screen */
 /*# sourceMappingURL=style.css.map */
