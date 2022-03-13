@@ -6,6 +6,10 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -28,6 +32,7 @@ header {
     position: fixed;
     background-color: transparent;
     z-index: 1000;
+    transition: .3s ease background-color;
 
     .header {
         display: flex;
@@ -36,7 +41,6 @@ header {
         margin: 0 auto;
         justify-content: space-between;
         padding: .5em 2em;
-        transition: .3s ease background-color;
     }
 
     #logo h1 {
